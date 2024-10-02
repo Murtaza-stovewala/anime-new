@@ -1,0 +1,224 @@
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+
+        a:hover {
+            color: #23527c;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #337ab7;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .header {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+       
+      #a{
+        color: #fff;
+      }
+      #a:hover {
+        color: red;
+      }
+      
+
+       
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 2em;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #337ab7;
+        }
+
+        /* Home Section Styles */
+        #home {
+            text-align: center;
+            
+        }
+
+        #photo {
+            width: 150px;
+            height:250px;
+           align-self: center;
+           position: relative;
+           left: 35%;
+            
+            background-image: url(naruto.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+
+        }
+
+        /* About Section Styles */
+        #about ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #about li {
+            margin-bottom: 10px;
+        }
+
+        blockquote {
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        /* Gallery Section Styles */
+        #gallery ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #gallery li {
+            margin: 10px;
+        }
+
+        #gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+     /* Animations Section Styles */
+
+  
+  /*.animation-example {
+    position: relative; 
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;                                                      
+  }*/
+  
+  #animatin{
+   
+    text-align: center;
+    
+  }
+  
+  
+  .animation-example img {
+   
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .rasengan {
+    animation-name: rasengan;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  .shadow-clone {
+    animation-name: shadow-clone;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  .wind-effect {
+    animation-name: wind-effect;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  .ninja-run {
+    animation-name: ninja-run;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  /* Animations */
+  
+  @keyframes rasengan {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes shadow-clone {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes wind-effect {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes ninja-run {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
