@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naruto Website</title>
     <link rel="stylesheet" href="narutostyle.css"> 
-    
 </head>
 <body>
     <!-- header section -->
@@ -24,7 +23,7 @@
         <section id="home">
             <h1>Welcome to Naruto's World!</h1>
             <p>Naruto Uzumaki, the ninja from the Hidden Leaf Village...</p>
-            <button>Learn More</button>
+            <button> <a id="learnmore" href="https://en.wikipedia.org/wiki/Naruto" target="main">Learn More<a></a></button>
             <div id="photo"></div>
         </section>
         <!-- about section -->
@@ -41,30 +40,50 @@
             </blockquote>
         </section>
         <!-- gallery section -->
-        <section id="gallery">
+        <section id="gallery" >
             <h2>Naruto's Gallery</h2>
-            <ul>
-                <li><img src="naruto1.jpg" alt="Naruto image 1"></li>
-                <li><img src="naruto2.jpeg" alt="Naruto image 2"></li>
-                <li><img src="naruto3.jpg" alt="Naruto image 3"></li>
+            <ul id="gallery1">
+                <li class="gallery"><img class="image" id="image1" src="/naruto/naruto1.jpg" alt="Naruto image 1"></li>
+                <li class="gallery"><img class="image" id="image3" src="/naruto/naruto3.jpg" alt="Naruto image 2"></li>
+                <li class="gallery"><img class="image" id="image2" src="/naruto/naruto2.jpeg" alt="Naruto image 3"></li>
             </ul>
         </section>
         <!-- animations section -->
         <section id="animations">
             <h2 id="naruto-name">Naruto's Animations</h2>
-            <div class="animation-example">
-                <div class="animation-example rasengan">
-                    <img src="naruto-rasengan.jpg" alt="Naruto Rasengan">
+            <div class="animation">
+                <div class="animation ">Naruto-Rasengan
+                    <br>
+                    <img id="rasengan" src="/naruto/naruto-rasengan.jpg" alt="Naruto Rasengan"> 
                 </div>
-                <div class="animation-example shadow-clone">
-                    <img src="naruto-shadow-clone.jpg" alt="Naruto Shadow Clone">
+                <div class="animation ">
+                    Naruto-Shadow-Clone
+                     <br>
+                    <img id="shadow-clone1" src="/naruto/naruto-shadow-clone.jpg" alt="Naruto Shadow Clone">
+                    <img id="shadow-clone" src="/naruto/naruto-shadow-clone.jpg" alt="Naruto Shadow Clone">
+                    <img id="shadow-clone2" src="/naruto/naruto-shadow-clone.jpg" alt="Naruto Shadow Clone"> 
                 </div>
-                <div class="animation-example wind-effect">
-                    <img src="naruto-wind.jpg" alt="Naruto Wind Effect">
+                <div class="animation ">Naruto-Wind
+                    <br>
+                    <img id="wind-effect" src="/naruto/naruto-wind.jpg" alt="Naruto Wind Effect"> 
                 </div>
-                <div class="animation-example ninja-run">
-                    <img src="naruto-ninja-run.jpg" alt="Naruto Ninja Run">
+                <div class="animation ">Naruto-Ninja-Run
+                    <br>
+                    <img id="ninja-run" src="/naruto/naruto-ninja-run.jpg" alt="Naruto Ninja Run"> 
                 </div>
             </div>
         </section>
     </main>
+    <!-- footer section -->
+    <footer>
+        <p>&copy; 2023 Naruto Website. All rights reserved.</p>
+        <div><a id="home1" href="/index.html" target="_blank" >Home Site</a></div>
+        <ul>
+
+            <li><a id="sasuke1" href="/index.html" target="_blank" class="footer">Sasuke</a></li>
+            <li><a id="#kakashi1" href="/index.html" target="_blank" class="footer">kakashi</a></li>
+            <li><a id="gara1" href="/index.html" target="_blank" class="footer">Gara</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
